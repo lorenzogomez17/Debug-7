@@ -27,7 +27,9 @@ if (square(lowApprox)<2 && square(highApprox)>2){
         if (square(middle)>2){
             highApprox = middle;
         }
-        
+	if (square(middle)==2){
+	    break;
+	}        
     }
 }
 cout << "The square root of 2 is approximately " << middle;
